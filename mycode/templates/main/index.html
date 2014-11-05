@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for p in projects %}
+  <div>{{ p.name }} | {{ p.created }}</div>
+  {% empty %}
+   No numbers
+  {% endfor %}
+{% endblock content %}
